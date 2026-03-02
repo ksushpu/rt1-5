@@ -1,0 +1,50 @@
+
+$main-color: #3498db;     // Основной синий цвет
+$border-radius: 8px;      // Скругление углов
+
+// Миксин для кнопки
+@mixin btn-style($color) {
+    background: $color;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: $border-radius;
+    display: inline-block;
+    
+    &:hover {
+        background: darken($color, 10%);
+    }
+}
+
+// ========== СТИЛИ КАРТОЧКИ ==========
+.card {
+    width: 300px;
+    border: 1px solid #ddd;
+    border-radius: $border-radius;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    
+    &__image {
+        width: 100%;
+        border-radius: $border-radius;
+    }
+    
+    &__title {
+        font-size: 20px;
+        margin: 10px 0;
+    }
+    
+    &__desc {
+        color: #666;
+    }
+    
+    &__price {
+        font-size: 24px;
+        color: $main-color;
+        font-weight: bold;
+    }
+    
+    &__btn {
+        @include btn-style($main-color);
+    }
+}

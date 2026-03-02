@@ -1,0 +1,36 @@
+.card {
+  width: 300px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  font-family: Arial, sans-serif;
+}
+.card__image {
+  width: 100%;
+  border-radius: 8px;
+}
+.card__title {
+  font-size: 20px;
+  margin: 10px 0;
+}
+.card__desc {
+  color: #666;
+}
+.card__price {
+  font-size: 24px;
+  color: #3498db;
+  font-weight: bold;
+}
+.card__btn {
+  background: #3498db;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 8px;
+  display: inline-block;
+}
+.card__btn:hover {
+  background: rgb(33.1380753138, 125.1882845188, 186.8619246862);
+}
+
+/*# sourceMappingURL=styles.css.map */
